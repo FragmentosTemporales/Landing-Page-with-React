@@ -1,44 +1,28 @@
+const Card = (props) => {
+    return (
+        <div className="card col-md-3" >
+            <img src={props.img} className="card-img-top" alt="..." />
+            <div className="card-body">
+                <h5 className="card-title">{props.title}</h5>
+                <p className="card-text">{props.text}</p>
+                <a href="#" className="btn btn-primary">Enter</a>
+            </div>
+        </div>
+    )
+}
 const Cards = () => {
     return (
-        <>
-            <div className="d-flex flex-row mt-4 mb-4">
-                <div className="card col-3" >
-                    <img src="https://avatars.githubusercontent.com/u/118843037?v=4" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Programador</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div className="card col-3" >
-                    <img src="https://img.freepik.com/foto-gratis/nino-hace-malabares-naranjas-al-aire-libre_23-2148568547.jpg?w=2000" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Malabarista</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div className="card col-3" >
-                    <img src="https://fotofestin.com/wp-content/uploads/2015/01/Foto.jpg" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Fotografo</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div className="card col-3" >
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkn0Qd2NQiq5jSkzqffOvRpd5YLNhQIz48MA&usqp=CAU" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">DJ</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+        <div className="cards d-flex" >
 
+            <Card img="https://picsum.photos/id/237/400/400" title="Firulais" text="Primer contenido" />
 
-            </div>
+            <Card img="https://picsum.photos/id/238/400/400" title="Travels" text="Segundo contenido" />
 
-        </>
+            <Card img="https://picsum.photos/id/249/400/400" title="Travels" text="Tercer contenido" />
+
+            <Card img="https://picsum.photos/id/241/400/400" title="Home" text="Cuarto contenido" />
+
+        </div>
     )
 }
 export default Cards;
