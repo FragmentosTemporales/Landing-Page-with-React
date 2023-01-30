@@ -11,7 +11,7 @@ const App = () => {
       <div className="">
         <Jumbotron />
       </div>
-      <div className="d-flex ">
+      <div className="d-flex container">
         <h1>Photography</h1>
         </div>
       <div className="d-flex flex-row mt-4 mb-4">

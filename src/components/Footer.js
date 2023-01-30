@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-primary d-flex justify-content-center">
+        <nav className="navbar navbar-expand-lg bg-dark d-flex justify-content-center">
             <div>
-                <p>Copyrigth © Fragmentos Temporales</p>
+                <p className="text-warning">Copyrigth © Fragmentos Temporales</p>
             </div>
         </nav>
     )
